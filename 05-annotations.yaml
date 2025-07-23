@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: labels
+  labels:
+    project: roboshop
+    component: mysql
+    tier: backend
+    environment: dev
+  annotations:
+    description: "This pod demonstrates the use of annotations in Kubernetes."
+spec:
+  containers:
+    - name: nginx
+      image: nginx
