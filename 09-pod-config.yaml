@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-configmap
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    envFrom:
+    - configMapRef:
+        name: pod-config # Reference to a ConfigMap named 'pod-config'
+
+
+# kubectl apply -f 09-pod-config.yaml
+# kubectl get pods
+# kubectl exec -it env-configmap -- bash
+
+# this is related to the configmap created in 08-config-map.yaml & 09-pod-config.yaml

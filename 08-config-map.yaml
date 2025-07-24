@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pod-config
+  labels:
+    purpose: config-demo
+    env: dev
+data:
+  course: "Kubernetes Basics"
+  duration: "120HRS"
+  trainer: "Nagaraj"
+
+
+# kubectl apply -f 08-config-map.yaml
+# kubectl get configmap

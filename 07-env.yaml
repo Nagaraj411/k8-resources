@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env
+  labels:
+   purpose: env-demo
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:  # Environment variables
+    - name: course
+      value: "Kubernetes Basics"
+    - name: environment
+      value: "Development"  
+
+
+# commands
+# kubectl apply -f 07-env.yaml
+# kubectl get pods
+# kubectl exec -it env -- bash
