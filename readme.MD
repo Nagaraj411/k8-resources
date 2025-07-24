@@ -21,8 +21,6 @@ A structured set of Kubernetes YAML examples covering foundational concepts — 
 | `09-pod-config.yaml`      | 🔗 Connects a **Pod to ConfigMap** using environment variables.                 |
 | `10-secret.yaml`          | 🔐 Creates a **Secret** to store sensitive information like passwords, tokens. |
 | `11-pod-secret.yaml`      | 🧬 Injects a **Secret into a Pod** via environment variables or mounted files.  |
-              |
-
 ---
 
 ## 🚀 How to Apply
