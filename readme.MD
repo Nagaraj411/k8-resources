@@ -5,9 +5,6 @@ A structured set of Kubernetes YAML examples covering foundational concepts — 
 ---
 
 ## 🗂️ File Structure & Descriptions
-
-# 🗂️ File Structure & Descriptions
-
 | 📄 File Name              | 🔍 Description                                                                 |
 |---------------------------|--------------------------------------------------------------------------------|
 | `01-namespace.yaml`       | 🏷️ Creates a custom **Namespace** to isolate resources logically.               |
