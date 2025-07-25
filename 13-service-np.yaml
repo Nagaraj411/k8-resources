@@ -24,8 +24,8 @@ metadata:
   name: nginx-np
   labels:
     purpose: service-np-demo
-     project: roboshop
-     environment: dev
+    project: roboshop
+    environment: dev
 spec:
   containers:
   - name: nginx
