@@ -4,21 +4,26 @@ A structured set of Kubernetes YAML examples covering foundational concepts — 
 
 ---
 
-## 🗂️ File Structure & Descriptions
-| 📄 File Name              | 🔍 Description                                                                 |
-|---------------------------|--------------------------------------------------------------------------------|
-| `01-namespace.yaml`       | 🏷️ Creates a custom **Namespace** to isolate resources logically.               |
-| `02-pod.yaml`             | 🧱 Defines a **basic Pod** with a single container.                             |
-| `03-multi-container.yaml` | 🧊 Demonstrates a **Pod with multiple containers** sharing resources.           |
-| `04-labels.yaml`          | 🏷️ Adds **Labels** for identification and grouping.                            |
-| `05-annotations.yaml`     | 📝 Adds **Annotations** for non-identifying metadata.                          |
-| `06-resources.yaml`       | ⚖️ Sets **resource requests and limits** (CPU/memory) for containers.          |
-| `07-env.yaml`             | 🌱 Injects **environment variables** into containers.                          |
-| `08-config-map.yaml`      | 📘 Creates a **ConfigMap** to externalize configuration.                       |
-| `09-pod-config.yaml`      | 🔗 Connects a **Pod to ConfigMap** using environment variables.                 |
-| `10-secret.yaml`          | 🔐 Creates a **Secret** to store sensitive information like passwords, tokens. |
-| `11-pod-secret.yaml`      | 🧬 Injects a **Secret into a Pod** via environment variables or mounted files.  |
----
+## 🗂️ File Structure & Purpose
+
+| 📄 File Name              | 🧠 Purpose                                                              |
+|---------------------------|--------------------------------------------------------------------------|
+| `01-namespace.yaml`       | 🏷️ Creates a **Namespace** to isolate project resources                  |
+| `02-pod.yaml`             | 🧱 Defines a **basic Pod** with a single container                       |
+| `03-multi-container.yaml` | 🤝 Deploys a **Pod with multiple containers** (e.g., app + sidecar)      |
+| `04-labels.yaml`          | 🔖 Adds **labels** to help identify and group resources                  |
+| `05-annotations.yaml`     | 🗒️ Adds **annotations** (non-identifying metadata)                       |
+| `06-resources.yaml`       | ⚙️ Sets **CPU & Memory limits/requests** for containers                  |
+| `07-env.yaml`             | 🌱 Injects **environment variables** into containers                     |
+| `08-config-map.yaml`      | 📑 Creates a **ConfigMap** for external app configurations               |
+| `09-pod-config.yaml`      | 🔗 Connects **ConfigMap** to Pod using `envFrom`                         |
+| `10-secret.yaml`          | 🔐 Creates a **Secret** for sensitive data like passwords                |
+| `11-pod-secret.yaml`      | 🔑 Uses **Secret values** in a Pod as environment variables              |
+| `12-service.yaml`         | 🌐 Exposes Pod using **ClusterIP Service** (internal access)             |
+| `13-service-np.yaml`      | 🚪 Exposes Pod externally using a **NodePort Service**                   |
+| `14-service-LB.yaml`      | 🧲 Provisions a **LoadBalancer Service** (cloud provider required)       |
+| `15-replicaset.yaml`      | ♻️ Creates a **ReplicaSet** to maintain a fixed number of Pods           |
+| `16-deployment.yaml`      | 🚀 Manages Pods using **Deployment** (supports rollout & rollback)       |
 
 ## 🚀 How to Apply
 
