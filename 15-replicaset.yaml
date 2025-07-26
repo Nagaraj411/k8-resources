@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: nginx
+  # replicaset labels
+  labels:
+    purpose: rs-demo
+    project: roboshop
+    environment: dev
+    app: nginx
+spec:
+  replicas: 3 # number of pod replicas
+# these are the labels for replica set to create pods replicas this should match with pod labels
+  selector:
+    matchLabels:
+      purpose: rs-demo
+      project: roboshop
+      environment: dev
+      app: nginx
+  # This is pod definition
+  template:
+    metadata:
+      labels:
+        purpose: rs-demo
+        project: roboshop
+        environment: dev
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+
+# if we delete the one pod, replicaset will create a new pod automatically
+# kubectl apply -f 15-replicaset.yaml
+# kubectl get rs
+# kubectl get pods
+# kubectl describe rs nginx
+# kubectl get pods -o wide
+# kubectl delete rs nginx
