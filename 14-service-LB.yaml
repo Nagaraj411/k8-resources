@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-LB
+  name: nginx-lb
   labels:
-    purpose: service-LB-demo
+    purpose: service-lb-demo
 spec:
   type: LoadBalancer
   selector:
-    purpose: service-LB-demo
+    purpose: service-lb-demo
     project: roboshop
     environment: dev
   ports:
@@ -21,9 +21,9 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-LB
+  name: nginx-lb
   labels:
-    purpose: service-LB-demo
+    purpose: service-lb-demo
     project: roboshop
     environment: dev
 spec:
@@ -32,8 +32,8 @@ spec:
     image: nginx
 
 
-# kubectl apply -f 14-service-LB.yaml
+# kubectl apply -f 14-service-lb.yaml
 # kubectl get pods
 # kubectl get services or svc
-# kubectl describe service nginx-LB or svc nginx-LB
+# kubectl describe service nginx-lb or svc nginx-lb
 # kubectl get pods -o wide
