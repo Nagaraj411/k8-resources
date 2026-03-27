@@ -16,7 +16,7 @@ resource "aws_instance" "K8" {
 }
 resource "aws_security_group" "allow_all_K8" {
     name        = "allow_all_K8"
-    description = "allow all traffic"
+    description = "allow all traffic" good for K8 cluster
 
     ingress {
         from_port        = 0
