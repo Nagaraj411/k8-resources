@@ -14,7 +14,7 @@ spec:
     - name: environment
       value: "Development"  
 
-
+fdfdf
 # commands
 # kubectl apply -f 07-env.yaml
 # kubectl get pods
