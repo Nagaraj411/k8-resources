@@ -12,8 +12,8 @@ spec:
     environment: dev
   ports:
   - protocol: TCP
-    port: 80  # service port
-    targetPort: 80 # container port
+    port: 80  # service ports
+    targetPort: 80 # container ports
 
 
 
