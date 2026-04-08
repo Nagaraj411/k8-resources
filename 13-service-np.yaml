@@ -37,3 +37,5 @@ spec:
 # kubectl get services or svc
 # kubectl describe service nginx-np or svc nginx-np
 # kubectl get pods -o wide
+
+
